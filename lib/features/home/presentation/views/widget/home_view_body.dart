@@ -29,7 +29,7 @@ class HomeViewBody extends StatelessWidget {
               padding: PaddingManager.symmetric(context: context, vertical: 0),
               child: Text(
                 AppString.bestSeller,
-                style: StyleManager.textStyle22(context, FontWeight.bold),
+                style: StyleManager.textStyle24(context, FontWeight.w500),
               ),
             ),
             SizedBoxManager.height(context, 30),

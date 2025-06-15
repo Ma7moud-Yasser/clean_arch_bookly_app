@@ -25,33 +25,24 @@ class BestSellerItem extends StatelessWidget {
               aspectRatio: 70 / 105,
               child: ClipRRect(
                 borderRadius: BorderRadiusManager.small(context),
-                child: Image.asset(ImagesAssets.book, fit: BoxFit.cover),
+                child: Image.asset(ImagesAssets.book1, fit: BoxFit.cover),
               ),
             ),
           ),
-          SizedBoxManager.width(context, 30),
+          SizedBoxManager.width(context, 32),
           Expanded(
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Text(
-                  textAlign: TextAlign.justify,
                   "Harry Potter and the Goblet of Fire",
                   style: StyleManager.textStyle20(context),
                 ),
-                Text(
-                  textAlign: TextAlign.justify,
-                  "J.K. Rowling",
-                  style: StyleManager.textStyle16(context),
-                ),
+                Text("J.K. Rowling", style: StyleManager.textStyle16(context)),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
-                    Text(
-                      textAlign: TextAlign.justify,
-                      "19.99 \$",
-                      style: StyleManager.textStyle20(context),
-                    ),
+                    Text("19.99 \$", style: StyleManager.textStyle20(context)),
                     Row(
                       children: [
                         Icon(Icons.star_rate_rounded, color: AppColor.rating),
@@ -62,7 +53,6 @@ class BestSellerItem extends StatelessWidget {
                             vertical: 0,
                           ),
                           child: Text(
-                            textAlign: TextAlign.justify,
                             "4.8",
                             style: StyleManager.textStyle16(
                               context,
@@ -71,7 +61,6 @@ class BestSellerItem extends StatelessWidget {
                         ),
 
                         Text(
-                          textAlign: TextAlign.justify,
                           "(2390)",
                           style: StyleManager.textStyle16(context),
                         ),

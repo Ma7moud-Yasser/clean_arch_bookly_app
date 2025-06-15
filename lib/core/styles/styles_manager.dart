@@ -44,7 +44,7 @@ abstract class StyleManager {
 
     return TextStyle(
       fontSize: adjustedFontSize,
-      fontFamily: GoogleFonts.cairo(fontWeight: fontWeight).fontFamily,
+      fontFamily: GoogleFonts.montserrat(fontWeight: fontWeight).fontFamily,
       fontWeight: fontWeight,
       color: color,
     );
