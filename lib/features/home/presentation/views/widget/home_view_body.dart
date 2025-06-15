@@ -1,5 +1,6 @@
 import 'package:clean_arch_bookly_app/core/styles/padding_manager.dart';
 import 'package:clean_arch_bookly_app/features/home/presentation/views/widget/custom_app_bar.dart';
+import 'package:clean_arch_bookly_app/features/home/presentation/views/widget/featured_card.dart';
 import 'package:flutter/material.dart';
 
 class HomeViewBody extends StatelessWidget {
@@ -11,7 +12,7 @@ class HomeViewBody extends StatelessWidget {
       body: SafeArea(
         child: Padding(
           padding: PaddingManager.symmetric(context: context),
-          child: Column(children: [CustomAppBar()]),
+          child: Column(children: [CustomAppBar(), FeaturedCard()]),
         ),
       ),
     );
