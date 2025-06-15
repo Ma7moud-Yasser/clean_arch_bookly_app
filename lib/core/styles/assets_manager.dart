@@ -8,4 +8,5 @@ class ImagesAssets {
 class SvgAssets {
   /// Splash Screen
   static const String logo = "$iconPath/BOOKLY.svg";
+  static const String search = "$iconPath/search.svg";
 }

@@ -11,8 +11,8 @@ class PaddingManager {
 
   static EdgeInsets symmetric({
     required BuildContext context,
-    double horizontal = 16,
-    double vertical = 16,
+    double horizontal = 30,
+    double vertical = 30,
   }) {
     return EdgeInsets.symmetric(
       horizontal: _responsiveSize(context, horizontal),
