@@ -35,6 +35,8 @@ class BestSellerItem extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Text(
+                  maxLines: 2,
+                  overflow: TextOverflow.ellipsis,
                   "Harry Potter and the Goblet of Fire",
                   style: StyleManager.textStyle20(
                     context,
@@ -47,7 +49,7 @@ class BestSellerItem extends StatelessWidget {
                   children: [
                     Text(
                       "19.99 \$",
-                      style: StyleManager.textStyle20(
+                      style: StyleManager.textStyle18(
                         context,
                         fontFamily: AppFontFamily.cairo,
                       ),
