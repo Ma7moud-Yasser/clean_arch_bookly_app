@@ -41,7 +41,8 @@ class _FeaturedListViewState extends State<FeaturedListView> {
     return CarouselSlider(
       options: CarouselOptions(
         enlargeCenterPage: true,
-        viewportFraction: 0.4,
+        viewportFraction: 0.37,
+
         enableInfiniteScroll: true,
         autoPlay: false,
         autoPlayInterval: const Duration(seconds: 3),

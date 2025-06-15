@@ -34,10 +34,10 @@ abstract class StyleManager {
     final double adjustedFontSize = responsiveFont(context, fontSize);
 
     Color color;
-    if (fontSize < 16) {
+    if (fontSize <= 16) {
       color = AppColor.gray;
     } else if (fontSize <= 24) {
-      color = AppColor.back;
+      color = AppColor.white;
     } else {
       color = AppColor.back;
     }

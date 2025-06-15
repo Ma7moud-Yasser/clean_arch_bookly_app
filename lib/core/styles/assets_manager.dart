@@ -8,6 +8,7 @@ class SoundsAssets {
 
 class ImagesAssets {
   static const String book1 = "$imagePath/book1.png";
+  static const String book = "$imagePath/book.png";
 }
 
 class SvgAssets {
