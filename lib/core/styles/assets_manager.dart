@@ -1,5 +1,10 @@
+const String soundPath = "assets/sounds";
 const String imagePath = "assets/images";
 const String iconPath = "assets/svg";
+
+class SoundsAssets {
+  static const String uiClick = "$soundPath/ui_click.wav";
+}
 
 class ImagesAssets {
   static const String book1 = "$imagePath/book1.png";
