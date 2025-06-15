@@ -21,7 +21,7 @@ class HomeViewBody extends StatelessWidget {
               child: CustomAppBar(),
             ),
 
-            SizedBoxManager.height(context, 60),
+            SizedBoxManager.height(context, 30),
             FeaturedListView(),
             SizedBoxManager.height(context, 60),
 
@@ -29,7 +29,10 @@ class HomeViewBody extends StatelessWidget {
               padding: PaddingManager.symmetric(context: context, vertical: 0),
               child: Text(
                 AppString.bestSeller,
-                style: StyleManager.textStyle24(context, FontWeight.w500),
+                style: StyleManager.textStyle24(
+                  context,
+                  fontWeight: FontWeight.w500,
+                ),
               ),
             ),
             SizedBoxManager.height(context, 30),

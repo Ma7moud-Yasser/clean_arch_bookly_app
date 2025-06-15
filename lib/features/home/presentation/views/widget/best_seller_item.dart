@@ -25,7 +25,7 @@ class BestSellerItem extends StatelessWidget {
               aspectRatio: 70 / 105,
               child: ClipRRect(
                 borderRadius: BorderRadiusManager.small(context),
-                child: Image.asset(ImagesAssets.book1, fit: BoxFit.cover),
+                child: Image.asset(ImagesAssets.book, fit: BoxFit.cover),
               ),
             ),
           ),
@@ -36,13 +36,22 @@ class BestSellerItem extends StatelessWidget {
               children: [
                 Text(
                   "Harry Potter and the Goblet of Fire",
-                  style: StyleManager.textStyle20(context),
+                  style: StyleManager.textStyle20(
+                    context,
+                    fontFamily: AppFontFamily.GTSectra,
+                  ),
                 ),
                 Text("J.K. Rowling", style: StyleManager.textStyle16(context)),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
-                    Text("19.99 \$", style: StyleManager.textStyle20(context)),
+                    Text(
+                      "19.99 \$",
+                      style: StyleManager.textStyle20(
+                        context,
+                        fontFamily: AppFontFamily.cairo,
+                      ),
+                    ),
                     Row(
                       children: [
                         Icon(Icons.star_rate_rounded, color: AppColor.rating),
