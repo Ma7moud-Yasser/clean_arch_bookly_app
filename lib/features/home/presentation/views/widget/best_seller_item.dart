@@ -1,7 +1,7 @@
+import 'package:clean_arch_bookly_app/core/components/custom_ratting.dart';
 import 'package:clean_arch_bookly_app/core/resources/route_manager.dart';
 import 'package:clean_arch_bookly_app/core/styles/assets_manager.dart';
 import 'package:clean_arch_bookly_app/core/styles/border_radius_manager.dart';
-import 'package:clean_arch_bookly_app/core/styles/color_manager.dart';
 import 'package:clean_arch_bookly_app/core/styles/padding_manager.dart';
 import 'package:clean_arch_bookly_app/core/styles/sized_box_manager.dart';
 import 'package:clean_arch_bookly_app/core/styles/styles_manager.dart';
@@ -63,29 +63,7 @@ class BestSellerItem extends StatelessWidget {
                           fontFamily: AppFontFamily.cairo,
                         ),
                       ),
-                      Row(
-                        children: [
-                          Icon(Icons.star_rate_rounded, color: AppColor.rating),
-                          Padding(
-                            padding: PaddingManager.symmetric(
-                              context: context,
-                              horizontal: 8,
-                              vertical: 0,
-                            ),
-                            child: Text(
-                              "4.8",
-                              style: StyleManager.textStyle16(
-                                context,
-                              ).copyWith(color: AppColor.white),
-                            ),
-                          ),
-
-                          Text(
-                            "(2390)",
-                            style: StyleManager.textStyle16(context),
-                          ),
-                        ],
-                      ),
+                      CustomRatting(),
                     ],
                   ),
                 ],

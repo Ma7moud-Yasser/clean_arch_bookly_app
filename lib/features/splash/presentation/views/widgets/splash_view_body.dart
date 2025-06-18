@@ -1,7 +1,7 @@
 import 'package:clean_arch_bookly_app/core/resources/route_manager.dart';
 import 'package:clean_arch_bookly_app/core/styles/assets_manager.dart';
 import 'package:clean_arch_bookly_app/core/styles/size_manager.dart';
-import 'package:clean_arch_bookly_app/core/utils/helper/navigation_pages.dart';
+import 'package:clean_arch_bookly_app/core/components/navigation_pages.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 

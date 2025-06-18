@@ -1,3 +1,4 @@
+import 'package:clean_arch_bookly_app/core/components/custom_ratting.dart';
 import 'package:clean_arch_bookly_app/core/styles/assets_manager.dart';
 import 'package:clean_arch_bookly_app/core/styles/border_radius_manager.dart';
 import 'package:clean_arch_bookly_app/core/styles/color_manager.dart';
@@ -35,6 +36,17 @@ class BookDetailsViewBody extends StatelessWidget {
                   fontFamily: AppFontFamily.GTSectra,
                 ).copyWith(color: AppColor.white),
               ),
+              SizedBoxManager.height(context, 8),
+              Text(
+                "Rudyard Kipling",
+                style: StyleManager.textStyle20(
+                  context,
+                  fontFamily: AppFontFamily.montserrat,
+                ).copyWith(color: AppColor.gray),
+              ),
+              SizedBoxManager.height(context, 18),
+
+              CustomRatting(),
             ],
           ),
         ),
