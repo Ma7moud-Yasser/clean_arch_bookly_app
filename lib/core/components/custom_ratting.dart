@@ -4,7 +4,10 @@ import 'package:clean_arch_bookly_app/core/styles/styles_manager.dart';
 import 'package:flutter/material.dart';
 
 class CustomRatting extends StatelessWidget {
-  const CustomRatting({super.key});
+  final String ratting;
+  final String views;
+
+  const CustomRatting({super.key, required this.ratting, required this.views});
 
   @override
   Widget build(BuildContext context) {
@@ -21,14 +24,14 @@ class CustomRatting extends StatelessWidget {
                 vertical: 0,
               ),
               child: Text(
-                "4.8",
+                ratting,
                 style: StyleManager.textStyle16(
                   context,
                 ).copyWith(color: AppColor.white),
               ),
             ),
 
-            Text("(2390)", style: StyleManager.textStyle16(context)),
+            Text("($views)", style: StyleManager.textStyle16(context)),
           ],
         ),
       ],
