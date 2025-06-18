@@ -1,11 +1,9 @@
-import 'package:clean_arch_bookly_app/core/components/custom_button.dart';
-import 'package:clean_arch_bookly_app/core/components/custom_ratting.dart';
 import 'package:clean_arch_bookly_app/core/styles/assets_manager.dart';
 import 'package:clean_arch_bookly_app/core/styles/border_radius_manager.dart';
-import 'package:clean_arch_bookly_app/core/styles/color_manager.dart';
 import 'package:clean_arch_bookly_app/core/styles/padding_manager.dart';
 import 'package:clean_arch_bookly_app/core/styles/sized_box_manager.dart';
-import 'package:clean_arch_bookly_app/core/styles/styles_manager.dart';
+import 'package:clean_arch_bookly_app/features/home/presentation/views/widget/book_details_action_button.dart';
+import 'package:clean_arch_bookly_app/features/home/presentation/views/widget/book_informations.dart';
 import 'package:clean_arch_bookly_app/features/home/presentation/views/widget/custom_book_details_app_bar.dart';
 import 'package:flutter/material.dart';
 
@@ -18,6 +16,7 @@ class BookDetailsViewBody extends StatelessWidget {
       body: SafeArea(
         child: Padding(
           padding: PaddingManager.symmetric(context: context),
+
           child: Column(
             children: [
               CustomBookDetailsAppBar(),
@@ -31,58 +30,17 @@ class BookDetailsViewBody extends StatelessWidget {
                 ),
               ),
               SizedBoxManager.height(context, 44),
-              Text(
-                "The Jungle Book",
-                style: StyleManager.textStyle32(
-                  context,
-                  fontFamily: AppFontFamily.GTSectra,
-                ).copyWith(color: AppColor.white),
+              BookInformations(
+                title: "The Jungle Book",
+                author: "Rudyard Kipling",
+                ratting: "4.8",
+                views: "2390",
               ),
-              SizedBoxManager.height(context, 8),
-              Text(
-                "Rudyard Kipling",
-                style: StyleManager.textStyle20(
-                  context,
-                  fontFamily: AppFontFamily.montserrat,
-                ).copyWith(color: AppColor.gray),
-              ),
-              SizedBoxManager.height(context, 20),
-              CustomRatting(),
               SizedBoxManager.height(context, 40),
-              Row(
-                children: [
-                  Expanded(
-                    child: CustomButton(
-                      fontWeight: FontWeight.bold,
-                      backgroundColor: AppColor.white,
-                      textColor: AppColor.back,
-                      buttonText: "19.99 \$",
-                      borderRadius: BorderRadiusManager.custom(
-                        context: context,
-                        bottomLeft: 16,
-                        topLeft: 16,
-                      ),
-                      onPressed: () {
-                        // Handle button press
-                      },
-                    ),
-                  ),
-                  Expanded(
-                    child: CustomButton(
-                      backgroundColor: AppColor.lightOrange,
-                      textColor: AppColor.white,
-                      buttonText: "Free Preview",
-                      borderRadius: BorderRadiusManager.custom(
-                        context: context,
-                        bottomRight: 16,
-                        topRight: 16,
-                      ),
-                      onPressed: () {
-                        // Handle button press
-                      },
-                    ),
-                  ),
-                ],
+              BookDetailsActionButton(
+                onPressedBuy: () {},
+                onPressedPreview: () {},
+                price: "19.99 \$",
               ),
             ],
           ),
