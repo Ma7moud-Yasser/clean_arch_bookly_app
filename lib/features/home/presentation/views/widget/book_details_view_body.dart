@@ -2,6 +2,7 @@ import 'package:clean_arch_bookly_app/core/styles/assets_manager.dart';
 import 'package:clean_arch_bookly_app/core/styles/border_radius_manager.dart';
 import 'package:clean_arch_bookly_app/core/styles/padding_manager.dart';
 import 'package:clean_arch_bookly_app/core/styles/sized_box_manager.dart';
+import 'package:clean_arch_bookly_app/core/styles/styles_manager.dart';
 import 'package:clean_arch_bookly_app/features/home/presentation/views/widget/book_details_action_button.dart';
 import 'package:clean_arch_bookly_app/features/home/presentation/views/widget/book_informations.dart';
 import 'package:clean_arch_bookly_app/features/home/presentation/views/widget/custom_book_details_app_bar.dart';
@@ -18,15 +19,18 @@ class BookDetailsViewBody extends StatelessWidget {
           padding: PaddingManager.symmetric(context: context),
 
           child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               CustomBookDetailsAppBar(),
 
-              ClipRRect(
-                borderRadius: BorderRadiusManager.medium(context),
-                child: Image.asset(
-                  ImagesAssets.book1,
-                  height: MediaQuery.of(context).size.height * 0.35,
-                  fit: BoxFit.cover,
+              Center(
+                child: ClipRRect(
+                  borderRadius: BorderRadiusManager.medium(context),
+                  child: Image.asset(
+                    ImagesAssets.book1,
+                    height: MediaQuery.of(context).size.height * 0.35,
+                    fit: BoxFit.cover,
+                  ),
                 ),
               ),
               SizedBoxManager.height(context, 44),
@@ -41,6 +45,14 @@ class BookDetailsViewBody extends StatelessWidget {
                 onPressedBuy: () {},
                 onPressedPreview: () {},
                 price: "19.99 \$",
+              ),
+              SizedBoxManager.height(context, 50),
+              Text(
+                "You Can Also Like",
+                style: StyleManager.textStyle18(
+                  context,
+                  fontFamily: AppFontFamily.montserrat,
+                ).copyWith(color: Colors.white),
               ),
             ],
           ),
