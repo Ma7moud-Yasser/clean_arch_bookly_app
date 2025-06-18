@@ -1,3 +1,4 @@
+import 'package:clean_arch_bookly_app/core/styles/color_manager.dart';
 import 'package:flutter/material.dart';
 
 class CustomBookDetailsAppBar extends StatelessWidget {
@@ -12,11 +13,15 @@ class CustomBookDetailsAppBar extends StatelessWidget {
           onPressed: () {
             Navigator.pop(context);
           },
-          icon: Icon(Icons.close_rounded, size: 45),
+          icon: Icon(Icons.close_rounded, size: 35, color: AppColor.white),
         ),
         IconButton(
           onPressed: () {},
-          icon: Icon(Icons.shopping_cart_outlined, size: 35),
+          icon: Icon(
+            Icons.shopping_cart_outlined,
+            size: 30,
+            color: AppColor.white,
+          ),
         ),
       ],
     );
