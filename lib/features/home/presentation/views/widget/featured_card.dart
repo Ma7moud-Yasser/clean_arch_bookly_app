@@ -14,9 +14,12 @@ class FeaturedCard extends StatelessWidget {
   Widget build(BuildContext context) {
     return Stack(
       children: [
-        ClipRRect(
-          borderRadius: BorderRadiusManager.medium(context),
-          child: Image.asset(ImagesAssets.book1, fit: BoxFit.contain),
+        AspectRatio(
+          aspectRatio: 150 / 224,
+          child: ClipRRect(
+            borderRadius: BorderRadiusManager.medium(context),
+            child: Image.asset(ImagesAssets.book2, fit: BoxFit.cover),
+          ),
         ),
         Positioned(
           right: 8,
