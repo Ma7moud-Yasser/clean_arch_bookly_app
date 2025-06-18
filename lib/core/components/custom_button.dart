@@ -38,7 +38,7 @@ class CustomButton extends StatelessWidget {
         padding: PaddingManager.symmetric(
           context: context,
           // horizontal: 48,
-          vertical: 28,
+          vertical: 20,
         ),
       ),
       onPressed: onPressed,
