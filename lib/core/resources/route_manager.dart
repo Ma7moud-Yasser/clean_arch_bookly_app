@@ -1,4 +1,4 @@
-import 'package:clean_arch_bookly_app/features/home/presentation/book_details_view.dart';
+import 'package:clean_arch_bookly_app/features/home/presentation/views/book_details_view.dart';
 import 'package:clean_arch_bookly_app/features/home/presentation/views/home_view.dart';
 import 'package:clean_arch_bookly_app/features/splash/presentation/views/splash_view.dart';
 import 'package:flutter/material.dart';
