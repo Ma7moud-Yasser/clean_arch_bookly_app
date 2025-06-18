@@ -63,7 +63,7 @@ class BestSellerItem extends StatelessWidget {
                           fontFamily: AppFontFamily.cairo,
                         ),
                       ),
-                      CustomRatting(),
+                      CustomRatting(ratting: "4.8", views: "2390"),
                     ],
                   ),
                 ],
