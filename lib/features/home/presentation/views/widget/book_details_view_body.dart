@@ -44,8 +44,7 @@ class BookDetailsViewBody extends StatelessWidget {
                   fontFamily: AppFontFamily.montserrat,
                 ).copyWith(color: AppColor.gray),
               ),
-              SizedBoxManager.height(context, 18),
-
+              SizedBoxManager.height(context, 20),
               CustomRatting(),
             ],
           ),
