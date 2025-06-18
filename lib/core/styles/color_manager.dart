@@ -6,7 +6,7 @@ class AppColor {
   static const white = Colors.white;
   static const gray = Color(0xff767F7D);
   static const rating = Color(0xffFFDD4F);
-  static const lightOrange = Color(0xffE6E9EA);
+  static const lightOrange = Color(0xffEF8262);
   // static const lightPrimary = Color(0xff2D9F5D);
   // static const darkPrimary = Color(0xff1B5E37);
   // static const secondary = Color(0xffF4A91F);

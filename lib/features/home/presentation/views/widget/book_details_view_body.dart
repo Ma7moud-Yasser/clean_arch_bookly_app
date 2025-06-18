@@ -1,3 +1,4 @@
+import 'package:clean_arch_bookly_app/core/components/custom_button.dart';
 import 'package:clean_arch_bookly_app/core/components/custom_ratting.dart';
 import 'package:clean_arch_bookly_app/core/styles/assets_manager.dart';
 import 'package:clean_arch_bookly_app/core/styles/border_radius_manager.dart';
@@ -20,6 +21,7 @@ class BookDetailsViewBody extends StatelessWidget {
           child: Column(
             children: [
               CustomBookDetailsAppBar(),
+
               ClipRRect(
                 borderRadius: BorderRadiusManager.medium(context),
                 child: Image.asset(
@@ -46,6 +48,42 @@ class BookDetailsViewBody extends StatelessWidget {
               ),
               SizedBoxManager.height(context, 20),
               CustomRatting(),
+              SizedBoxManager.height(context, 40),
+              Row(
+                children: [
+                  Expanded(
+                    child: CustomButton(
+                      fontWeight: FontWeight.bold,
+                      backgroundColor: AppColor.white,
+                      textColor: AppColor.back,
+                      buttonText: "19.99 \$",
+                      borderRadius: BorderRadiusManager.custom(
+                        context: context,
+                        bottomLeft: 16,
+                        topLeft: 16,
+                      ),
+                      onPressed: () {
+                        // Handle button press
+                      },
+                    ),
+                  ),
+                  Expanded(
+                    child: CustomButton(
+                      backgroundColor: AppColor.lightOrange,
+                      textColor: AppColor.white,
+                      buttonText: "Free Preview",
+                      borderRadius: BorderRadiusManager.custom(
+                        context: context,
+                        bottomRight: 16,
+                        topRight: 16,
+                      ),
+                      onPressed: () {
+                        // Handle button press
+                      },
+                    ),
+                  ),
+                ],
+              ),
             ],
           ),
         ),
