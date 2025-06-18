@@ -10,12 +10,14 @@ class CustomBookDetailsAppBar extends StatelessWidget {
       mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: [
         IconButton(
+          padding: EdgeInsets.zero,
           onPressed: () {
             Navigator.pop(context);
           },
           icon: Icon(Icons.close_rounded, size: 35, color: AppColor.white),
         ),
         IconButton(
+          padding: EdgeInsets.zero,
           onPressed: () {},
           icon: Icon(
             Icons.shopping_cart_outlined,
