@@ -1,8 +1,9 @@
+import 'package:clean_arch_bookly_app/features/home/presentation/book_details_view.dart';
 import 'package:clean_arch_bookly_app/features/home/presentation/views/home_view.dart';
 import 'package:clean_arch_bookly_app/features/splash/presentation/views/splash_view.dart';
 import 'package:flutter/material.dart';
 
-enum AppRoute { splashView, homeView }
+enum AppRoute { splashView, homeView, bookDetailsView }
 
 class RouteGenerator {
   static Route<dynamic> getRoute(RouteSettings routeSettings) {
@@ -13,6 +14,8 @@ class RouteGenerator {
           return MaterialPageRoute(builder: (_) => const SplashView());
         case AppRoute.homeView:
           return MaterialPageRoute(builder: (_) => const HomeView());
+        case AppRoute.bookDetailsView:
+          return MaterialPageRoute(builder: (_) => const BookDetailsView());
       }
     } catch (e) {
       return _unDefinedRoute();
