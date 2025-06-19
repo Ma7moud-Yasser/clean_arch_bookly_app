@@ -2,7 +2,6 @@ import 'package:clean_arch_bookly_app/core/styles/padding_manager.dart';
 import 'package:clean_arch_bookly_app/core/styles/sized_box_manager.dart';
 import 'package:clean_arch_bookly_app/features/home/presentation/views/widget/book_details_action_button.dart';
 import 'package:clean_arch_bookly_app/features/home/presentation/views/widget/book_informations.dart';
-import 'package:clean_arch_bookly_app/features/home/presentation/views/widget/bool_cover.dart';
 import 'package:clean_arch_bookly_app/features/home/presentation/views/widget/custom_book_details_app_bar.dart';
 import 'package:clean_arch_bookly_app/features/home/presentation/views/widget/suggestion_book_section.dart';
 import 'package:flutter/material.dart';
@@ -27,11 +26,6 @@ class BookDetailsViewBody extends StatelessWidget {
                     children: [
                       CustomBookDetailsAppBar(),
                       SizedBoxManager.height(context, 30),
-                      SizedBox(
-                        height: MediaQuery.of(context).size.height * 0.3,
-                        child: BookCover(),
-                      ),
-                      SizedBoxManager.height(context, 44),
                       BookInformations(
                         title: "The Jungle Book",
                         author: "Rudyard Kipling",

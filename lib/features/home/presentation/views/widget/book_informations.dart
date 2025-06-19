@@ -2,6 +2,7 @@ import 'package:clean_arch_bookly_app/core/components/custom_ratting.dart';
 import 'package:clean_arch_bookly_app/core/styles/color_manager.dart';
 import 'package:clean_arch_bookly_app/core/styles/sized_box_manager.dart';
 import 'package:clean_arch_bookly_app/core/styles/styles_manager.dart';
+import 'package:clean_arch_bookly_app/features/home/presentation/views/widget/bool_cover.dart';
 import 'package:flutter/material.dart';
 
 class BookInformations extends StatelessWidget {
@@ -22,6 +23,11 @@ class BookInformations extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: [
+        SizedBox(
+          height: MediaQuery.of(context).size.height * 0.3,
+          child: BookCover(),
+        ),
+        SizedBoxManager.height(context, 44),
         Text(
           title,
           style: StyleManager.textStyle32(
