@@ -1,3 +1,4 @@
+import 'package:clean_arch_bookly_app/core/styles/padding_manager.dart';
 import 'package:clean_arch_bookly_app/core/styles/sized_box_manager.dart';
 import 'package:clean_arch_bookly_app/features/home/presentation/views/widget/bool_cover.dart';
 import 'package:flutter/material.dart';
@@ -11,6 +12,7 @@ class SuggestionBooksListView extends StatelessWidget {
       height: MediaQuery.of(context).size.height * 0.15,
       child: ListView.separated(
         scrollDirection: Axis.horizontal,
+        padding: PaddingManager.only(context: context, left: 30),
         itemBuilder: (context, index) => BookCover(),
         separatorBuilder:
             (context, index) => SizedBoxManager.width(context, 20),
