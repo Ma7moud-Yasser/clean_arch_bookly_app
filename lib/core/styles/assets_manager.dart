@@ -18,4 +18,5 @@ class SvgAssets {
   static const String search = "$iconPath/search.svg";
   static const String playIcon = "$iconPath/play_icon.svg";
   static const String cartIcon = "$iconPath/cart.svg";
+  static const String closeIcon = "$iconPath/close.svg";
 }
