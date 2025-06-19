@@ -1,5 +1,6 @@
 import 'package:clean_arch_bookly_app/features/home/presentation/views/book_details_view.dart';
 import 'package:clean_arch_bookly_app/features/home/presentation/views/home_view.dart';
+import 'package:clean_arch_bookly_app/features/search/presentaion/views/search_view.dart';
 import 'package:clean_arch_bookly_app/features/splash/presentation/views/splash_view.dart';
 import 'package:flutter/material.dart';
 
@@ -17,7 +18,7 @@ class RouteGenerator {
         case AppRoute.bookDetailsView:
           return MaterialPageRoute(builder: (_) => const BookDetailsView());
         case AppRoute.searchView:
-          return MaterialPageRoute(builder: (_) => const BookDetailsView());
+          return MaterialPageRoute(builder: (_) => const SearchView());
       }
     } catch (e) {
       return _unDefinedRoute();
