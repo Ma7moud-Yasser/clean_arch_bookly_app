@@ -12,10 +12,13 @@ class CustomBookDetailsAppBar extends StatelessWidget {
     return Row(
       mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: [
-        SvgPicture.asset(
-          SvgAssets.closeIcon,
-          color: AppColor.white,
-          height: SizeManager.getHeight(context) * 0.03,
+        GestureDetector(
+          onTap: () => Navigator.pop(context),
+          child: SvgPicture.asset(
+            SvgAssets.closeIcon,
+            color: AppColor.white,
+            height: SizeManager.getHeight(context) * 0.03,
+          ),
         ),
         SvgPicture.asset(
           SvgAssets.cartIcon,
