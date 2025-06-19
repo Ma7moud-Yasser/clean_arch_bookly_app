@@ -13,25 +13,36 @@ class CustomSearchField extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return TextField(
-      decoration: InputDecoration(
-        hintText: AppString.searchInput,
-        hintStyle: StyleManager.textStyle16(
+    return Padding(
+      padding: PaddingManager.symmetric(
+        context: context,
+        horizontal: 0,
+        vertical: 40,
+      ),
+      child: TextField(
+        style: StyleManager.textStyle18(
           context,
           fontFamily: AppFontFamily.montserrat,
-        ).copyWith(color: AppColor.gray),
-        enabledBorder: OutlineInputBorder(
-          borderRadius: BorderRadiusManager.small(context),
-          borderSide: BorderSide(color: AppColor.white, width: 1.5),
-        ),
-        focusedBorder: OutlineInputBorder(
-          borderRadius: BorderRadiusManager.small(context),
-          borderSide: BorderSide(color: AppColor.lightOrange, width: 1.5),
-        ),
+        ).copyWith(color: AppColor.white),
+        decoration: InputDecoration(
+          hintText: AppString.searchInput,
+          hintStyle: StyleManager.textStyle16(
+            context,
+            fontFamily: AppFontFamily.montserrat,
+          ).copyWith(color: AppColor.white.withOpacity(0.7)),
+          enabledBorder: OutlineInputBorder(
+            borderRadius: BorderRadiusManager.small(context),
+            borderSide: BorderSide(color: AppColor.white, width: 1.5),
+          ),
+          focusedBorder: OutlineInputBorder(
+            borderRadius: BorderRadiusManager.small(context),
+            borderSide: BorderSide(color: AppColor.lightOrange, width: 1.5),
+          ),
 
-        suffixIcon: Padding(
-          padding: PaddingManager.all(context: context, value: 18.0),
-          child: SvgPicture.asset(SvgAssets.search),
+          suffixIcon: Padding(
+            padding: PaddingManager.all(context: context, value: 18.0),
+            child: SvgPicture.asset(SvgAssets.search),
+          ),
         ),
       ),
     );

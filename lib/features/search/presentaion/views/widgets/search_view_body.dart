@@ -1,5 +1,4 @@
 import 'package:clean_arch_bookly_app/core/styles/padding_manager.dart';
-import 'package:clean_arch_bookly_app/core/styles/sized_box_manager.dart';
 import 'package:clean_arch_bookly_app/features/search/presentaion/views/widgets/custom_search_books.dart';
 import 'package:clean_arch_bookly_app/features/search/presentaion/views/widgets/custom_search_field.dart';
 import 'package:flutter/material.dart';
@@ -14,11 +13,7 @@ class SearchViewBody extends StatelessWidget {
         padding: PaddingManager.symmetric(context: context),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            CustomSearchBooks(),
-            SizedBoxManager.height(context, 40),
-            CustomSearchField(),
-          ],
+          children: [CustomSearchBooks(), CustomSearchField()],
         ),
       ),
     );
