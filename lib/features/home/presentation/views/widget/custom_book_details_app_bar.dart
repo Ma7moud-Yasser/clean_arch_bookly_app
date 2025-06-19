@@ -1,5 +1,8 @@
+import 'package:clean_arch_bookly_app/core/styles/assets_manager.dart';
 import 'package:clean_arch_bookly_app/core/styles/color_manager.dart';
+import 'package:clean_arch_bookly_app/core/styles/size_manager.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 
 class CustomBookDetailsAppBar extends StatelessWidget {
   const CustomBookDetailsAppBar({super.key});
@@ -9,21 +12,14 @@ class CustomBookDetailsAppBar extends StatelessWidget {
     return Row(
       mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: [
-        IconButton(
-          padding: EdgeInsets.zero,
-          onPressed: () {
-            Navigator.pop(context);
-          },
-          icon: Icon(Icons.close_rounded, size: 35, color: AppColor.white),
+        SvgPicture.asset(
+          SvgAssets.closeIcon,
+          color: AppColor.white,
+          height: SizeManager.getHeight(context) * 0.03,
         ),
-        IconButton(
-          padding: EdgeInsets.zero,
-          onPressed: () {},
-          icon: Icon(
-            Icons.shopping_cart_outlined,
-            size: 30,
-            color: AppColor.white,
-          ),
+        SvgPicture.asset(
+          SvgAssets.cartIcon,
+          height: SizeManager.getHeight(context) * 0.03,
         ),
       ],
     );
