@@ -15,6 +15,7 @@ class BookDetailsViewBody extends StatelessWidget {
     return CustomScrollView(
       slivers: [
         SliverFillRemaining(
+          hasScrollBody: false,
           child: SafeArea(
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
