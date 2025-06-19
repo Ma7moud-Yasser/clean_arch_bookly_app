@@ -1,3 +1,7 @@
+import 'package:clean_arch_bookly_app/core/styles/padding_manager.dart';
+import 'package:clean_arch_bookly_app/core/styles/sized_box_manager.dart';
+import 'package:clean_arch_bookly_app/features/search/presentaion/views/widgets/custom_search_books.dart';
+import 'package:clean_arch_bookly_app/features/search/presentaion/views/widgets/custom_search_field.dart';
 import 'package:flutter/material.dart';
 
 class SearchViewBody extends StatelessWidget {
@@ -7,20 +11,13 @@ class SearchViewBody extends StatelessWidget {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Padding(
-        padding: EdgeInsets.symmetric(horizontal: 20.0, vertical: 10.0),
+        padding: PaddingManager.symmetric(context: context),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Text('Search Books'),
-            SizedBox(height: 20),
-            TextField(
-              decoration: InputDecoration(
-                hintText: 'Enter book title or author',
-                border: OutlineInputBorder(),
-                prefixIcon: Icon(Icons.search),
-              ),
-            ),
-            // Add more widgets here as needed
+            CustomSearchBooks(),
+            SizedBoxManager.height(context, 40),
+            CustomSearchField(),
           ],
         ),
       ),
