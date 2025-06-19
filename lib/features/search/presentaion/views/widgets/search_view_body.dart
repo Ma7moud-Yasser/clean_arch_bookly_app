@@ -11,7 +11,13 @@ class SearchViewBody extends StatelessWidget {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Padding(
-        padding: PaddingManager.symmetric(context: context),
+        padding: PaddingManager.only(
+          context: context,
+          top: 30,
+          left: 30,
+          right: 30,
+        ),
+
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [

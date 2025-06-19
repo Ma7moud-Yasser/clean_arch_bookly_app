@@ -30,7 +30,7 @@ class BookOverViewItem extends StatelessWidget {
                 aspectRatio: 70 / 105,
                 child: ClipRRect(
                   borderRadius: BorderRadiusManager.small(context),
-                  child: Image.asset(ImagesAssets.book, fit: BoxFit.cover),
+                  child: Image.asset(ImagesAssets.book1, fit: BoxFit.cover),
                 ),
               ),
             ),
