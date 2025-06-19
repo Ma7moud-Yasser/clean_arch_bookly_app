@@ -1,4 +1,3 @@
-import 'package:clean_arch_bookly_app/core/resources/route_manager.dart';
 import 'package:clean_arch_bookly_app/core/styles/padding_manager.dart';
 import 'package:clean_arch_bookly_app/features/home/presentation/views/widget/best_seller_item.dart';
 import 'package:flutter/material.dart';
@@ -15,8 +14,7 @@ class BestSellerListView extends StatelessWidget {
             padding: PaddingManager.symmetric(context: context, vertical: 0),
             sliver: SliverList(
               delegate: SliverChildBuilderDelegate(
-                (context, index) =>
-                    BestSellerItem(routeName: AppRoute.bookDetailsView),
+                (context, index) => BookOverViewItem(),
                 childCount: 10,
               ),
             ),

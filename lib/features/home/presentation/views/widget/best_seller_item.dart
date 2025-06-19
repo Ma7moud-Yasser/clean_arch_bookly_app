@@ -7,9 +7,8 @@ import 'package:clean_arch_bookly_app/core/styles/sized_box_manager.dart';
 import 'package:clean_arch_bookly_app/core/styles/styles_manager.dart';
 import 'package:flutter/material.dart';
 
-class BestSellerItem extends StatelessWidget {
-  final AppRoute routeName;
-  const BestSellerItem({super.key, required this.routeName});
+class BookOverViewItem extends StatelessWidget {
+  const BookOverViewItem({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -21,7 +20,7 @@ class BestSellerItem extends StatelessWidget {
       ),
       child: GestureDetector(
         onTap: () {
-          Navigator.pushNamed(context, routeName.name);
+          Navigator.pushNamed(context, AppRoute.bookDetailsView.name);
         },
         child: Row(
           children: [
