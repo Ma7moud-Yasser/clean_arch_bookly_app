@@ -8,7 +8,7 @@ class BookCover extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ClipRRect(
-      borderRadius: BorderRadiusManager.medium(context),
+      borderRadius: BorderRadiusManager.small(context),
       child: Image.asset(ImagesAssets.book1, fit: BoxFit.cover),
     );
   }
