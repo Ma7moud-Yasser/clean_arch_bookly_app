@@ -18,7 +18,7 @@ class FeaturedCard extends StatelessWidget {
           aspectRatio: 150 / 224,
           child: ClipRRect(
             borderRadius: BorderRadiusManager.medium(context),
-            child: Image.asset(ImagesAssets.book2, fit: BoxFit.cover),
+            child: Image.asset(ImagesAssets.book1, fit: BoxFit.cover),
           ),
         ),
         Positioned(
