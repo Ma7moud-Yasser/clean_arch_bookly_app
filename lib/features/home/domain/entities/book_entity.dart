@@ -6,12 +6,12 @@ class BookEntity {
   final num rating;
   final int viewersCount;
 
-  BookEntity({
-    required this.price,
-    required this.rating,
-    required this.viewersCount,
-    required this.title,
-    required this.authorName,
-    required this.coverImageUrl,
-  });
+  BookEntity(
+    this.price,
+    this.rating,
+    this.viewersCount,
+    this.title,
+    this.authorName,
+    this.coverImageUrl,
+  );
 }
