@@ -8,7 +8,7 @@ class FetchFeaturedBooksUseCase {
 
   FetchFeaturedBooksUseCase(this._repository);
 
-  Future<Either<Failure, List<BookEntity>>> fetchFeaturedBooks() {
+  Future<Either<Failure, List<BookEntity>>> call() {
     // check permissions
     // if permissions are not granted, return a failure
     // if permissions are granted, proceed to fetch featured books
