@@ -1,17 +1,19 @@
 class BookEntity {
-  final String title;
-  final String authorName;
-  final String coverImageUrl;
-  final num price;
-  final num rating;
-  final int viewersCount;
+  final String bookId;
+  final String? title;
+  final String? authorName;
+  final String? coverImageUrl;
+  final num? price;
+  final num? rating;
+  final num? viewersCount;
 
-  BookEntity(
-    this.price,
-    this.rating,
-    this.viewersCount,
-    this.title,
-    this.authorName,
-    this.coverImageUrl,
-  );
+  BookEntity({
+    required this.bookId,
+    required this.price,
+    required this.rating,
+    required this.viewersCount,
+    required this.title,
+    required this.authorName,
+    required this.coverImageUrl,
+  });
 }
