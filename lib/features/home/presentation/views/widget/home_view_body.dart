@@ -23,7 +23,7 @@ class HomeViewBody extends StatelessWidget {
             Padding(
               padding: PaddingManager.symmetric(context: context, vertical: 0),
               child: Text(
-                AppString.bestSeller,
+                AppString.lastBooks,
                 style: StyleManager.textStyle24(
                   context,
                   fontWeight: FontWeight.w500,
