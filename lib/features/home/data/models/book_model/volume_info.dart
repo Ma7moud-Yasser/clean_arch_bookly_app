@@ -66,7 +66,7 @@ class VolumeInfo {
             : ReadingModes.fromJson(
               json['readingModes'] as Map<String, dynamic>,
             ),
-    pageCount: json['pageCount'] as int?,
+    pageCount: json['pageCount'] as num?,
     averageRating: json['averageRating'] as num?,
     ratingsCount: json['ratingsCount'] as num?,
     printType: json['printType'] as String?,
