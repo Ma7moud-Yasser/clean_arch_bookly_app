@@ -1,3 +1,4 @@
+import 'package:clean_arch_bookly_app/core/resources/cache_keys.dart';
 import 'package:clean_arch_bookly_app/core/resources/route_manager.dart';
 import 'package:clean_arch_bookly_app/core/styles/color_manager.dart';
 import 'package:clean_arch_bookly_app/features/home/domain/entities/book_entity.dart';
@@ -8,7 +9,7 @@ void main() async {
   WidgetsFlutterBinding.ensureInitialized();
 
   Hive.registerAdapter(BookEntityAdapter());
-  await Hive.openBox<BookEntity>('books');
+  await Hive.openBox<BookEntity>(CacheKeys.featuredBook);
 
   runApp(const MyApp());
 }
